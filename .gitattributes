@@ -1,13 +1,16 @@
-# -------------------------------------------------
-# 1. Line-ending normalization (standard)
+# =============================================
+# 1. Line ending normalization (standard)
 * text=auto
 
-# 2. Treat .twb as XML for diffs
+# 2. Treat .twb files as XML with clean handling
 *.twb text eol=lf diff=xml
 
-# 3. **Make Linguist detect Tableau**
+# 3. Tell Linguist: this is the "Tableau" language
 *.twb linguist-language=Tableau
 *.twb linguist-detectable
 
-# 4. (Optional) Hide .twb from the bar so XML doesn’t dominate
+# 4. (Optional) Hide .twb from language stats to avoid "XML 100%"
 # *.twb linguist-vendored
+
+# 5. (Optional) Auto-format XML on commit for clean diffs
+# *.twb filter=twbformat
