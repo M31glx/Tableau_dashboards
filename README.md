@@ -6,3 +6,5 @@
    https://public.tableau.com/app/profile/ashkan.alvand/viz/OlistDeliveryDashboard/Dashboard1?publish=yes
 4. GreatFit Review Dashboard
    https://public.tableau.com/app/profile/ashkan.alvand/viz/GreatfitReviewDashboard_17552356238160/Dashboard1?publish=yes
+5. Facebook stock trend Dashboard
+   https://public.tableau.com/app/profile/ashkan.alvand/viz/FacebookInvestorDashboard_17554668840350/Facebookstocks?publish=yes
