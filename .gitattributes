@@ -1,8 +1,13 @@
-# Normalize line endings
+# -------------------------------------------------
+# 1. Line-ending normalization (standard)
 * text=auto
 
-# Treat .twb as XML with clean diffs
+# 2. Treat .twb as XML for diffs
 *.twb text eol=lf diff=xml
 
-# Optional: Hide .twb from stats so XML doesn't dominate
-*.twb linguist-vendored
+# 3. **Make Linguist detect Tableau**
+*.twb linguist-language=Tableau
+*.twb linguist-detectable
+
+# 4. (Optional) Hide .twb from the bar so XML doesn’t dominate
+# *.twb linguist-vendored
