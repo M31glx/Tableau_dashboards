@@ -1,11 +1,10 @@
-# Normalize line endings for all text files
 * text=auto
 
-# Treat .twb as XML (they are XML under the hood)
+# Tableau workbooks are XML
 *.twb text eol=lf diff=xml
 
-# Optional: Exclude from language stats (if you don't want "XML" dominating)
+# Optional: hide from language stats
 # *.twb linguist-vendored
 
-# Optional: Improve diff readability (requires custom diff driver, see below)
-# *.twb diff=tableau
+# Optional: auto-format on commit (requires filter setup)
+# *.twb filter=twbformat
