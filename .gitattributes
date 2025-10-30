@@ -1,7 +1,11 @@
-# Auto detect text files and perform LF normalization
+# Normalize line endings for all text files
 * text=auto
-*.twb linguist-detectable
-*.twb linguist-language=twb
-*.twb linguist-vendored
 
+# Treat .twb as XML (they are XML under the hood)
+*.twb text eol=lf diff=xml
 
+# Optional: Exclude from language stats (if you don't want "XML" dominating)
+# *.twb linguist-vendored
+
+# Optional: Improve diff readability (requires custom diff driver, see below)
+# *.twb diff=tableau
