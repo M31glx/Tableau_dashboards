@@ -2,3 +2,6 @@
 * text=auto
 *.twb linguist-detectable
 *.twb linguist-language=twb
+*.twb linguist-vendored
+
+
